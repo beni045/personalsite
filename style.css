@@ -217,7 +217,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "passions, interests";
+    content: "interests, contacts";
 }
 
 .about .about-content .right{
@@ -234,19 +234,55 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
+
+.about .about-content .right .downloadcv-btn{
     display: inline-block;
     background: rgb(3, 161, 252);
     color: #fff;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
+    padding: 10px 110px;
+    margin-top: 10px;
     border-radius: 6px;
     border: 2px solid rgb(3, 161, 252);
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+
+
+.about .about-content .right .contact-btns a,
+    .email-btn{
+    display: inline-block;
+    background: rgb(3, 161, 252);
+    color: #fff;
+    font-size: 57px;
+    font-weight: 500;
+    padding: 1px 45px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 2px solid rgb(3, 161, 252);
+    transition: all 0.3s ease;
+}
+
+/* .tooltiptext{
+    visibility: visible;
+}
+
+.about .about-content .right .contact-btns .email-btn:hover .tooltiptext{
+    visibility: visible;
+} */
+
+/* .about .about-content .right .contact-btns .email-btn:hover .fas .fa-envelope-square,
+.about .about-content .right .contact-btns .email-btn .fas .fa-clipboard{
+    display: none;
+}
+
+.about .about-content .right .contact-btns .email-btn:hover .fas .fa-envelope-square{
+    display: inline;
+} */
+
+.about .about-content .right a:hover,
+    .email-btn:hover{
     color: rgb(3, 161, 252);
     background: none;
 }
@@ -281,7 +317,6 @@ section .title::after{
     color: rgb(3, 161, 252);
     background: none;
 }
-
 
 /* mprojects section styling */
 .mprojects, .teams{
