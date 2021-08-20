@@ -262,24 +262,28 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid rgb(3, 161, 252);
     transition: all 0.3s ease;
+    cursor: pointer;
+}
+  
+.tooltip .tooltiptext {
+visibility: hidden;
+font-size: 25px;
+color: white;
+background-color: #111;
+text-align: left;
+border-radius: 6px;
+padding: 5px 5px;
+
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+right: 100px;
 }
 
-/* .tooltiptext{
-    visibility: visible;
+.email-btn:hover .tooltiptext {
+visibility: visible;
 }
 
-.about .about-content .right .contact-btns .email-btn:hover .tooltiptext{
-    visibility: visible;
-} */
-
-/* .about .about-content .right .contact-btns .email-btn:hover .fas .fa-envelope-square,
-.about .about-content .right .contact-btns .email-btn .fas .fa-clipboard{
-    display: none;
-}
-
-.about .about-content .right .contact-btns .email-btn:hover .fas .fa-envelope-square{
-    display: inline;
-} */
 
 .about .about-content .right a:hover,
     .email-btn:hover{
