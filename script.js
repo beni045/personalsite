@@ -67,7 +67,14 @@ $(document).ready(function(){
       
         /* Copy the text inside the text field */
         navigator.clipboard.writeText(copyText);
-        
+        var obj = document.getElementById("email-clipboard");
+        var orig = obj.style.color;
+        obj.style.color = 'rgb(3, 161, 252)';
+        setTimeout(function(){
+             obj.style.color = orig;
+        }, 500);
+
+
         /* Alert the copied text */
         // alert("Copied the text: " + copyText);
     });

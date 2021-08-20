@@ -272,7 +272,7 @@ color: white;
 background-color: #111;
 text-align: left;
 border-radius: 6px;
-padding: 5px 5px;
+padding: 8px 15px;
 
 /* Position the tooltip */
 position: absolute;
@@ -284,12 +284,18 @@ right: 100px;
 visibility: visible;
 }
 
-
 .about .about-content .right a:hover,
     .email-btn:hover{
     color: rgb(3, 161, 252);
     background: none;
 }
+
+/* .email-btn:active #email-clipboard{
+    color: rgb(3, 161, 252);
+    
+} */
+
+
 
 .about .about-content .left{
     width: 45%;
