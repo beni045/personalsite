@@ -235,66 +235,6 @@ section .title::after{
     text-align: justify;
 }
 
-.about .about-content .right .downloadcv-btn{
-    display: inline-block;
-    background: rgb(3, 161, 252);
-    color: #fff;
-    font-size: 35px;
-    font-weight: 500;
-    padding: 10px 110px;
-    margin-top: 10px;
-    border-radius: 6px;
-    border: 2px solid rgb(3, 161, 252);
-    transition: all 0.3s ease;
-}
-
-
-.about .about-content .right .contact-btns a,
-    .email-btn{
-    display: inline-block;
-    background: rgb(3, 161, 252);
-    color: #fff;
-    font-size: 57px;
-    font-weight: 500;
-    padding: 1px 45px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border-radius: 6px;
-    border: 2px solid rgb(3, 161, 252);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-  
-.tooltip .tooltiptext {
-visibility: hidden;
-font-size: 25px;
-color: white;
-background-color: #111;
-text-align: left;
-border-radius: 6px;
-padding: 8px 15px;
-
-/* Position the tooltip */
-position: absolute;
-z-index: 1;
-right: 100px;
-}
-
-.email-btn:hover .tooltiptext {
-visibility: visible;
-}
-
-.about .about-content .right a:hover,
-    .email-btn:hover{
-    color: rgb(3, 161, 252);
-    background: none;
-}
-
-/* .email-btn:active #email-clipboard{
-    color: rgb(3, 161, 252);
-    
-} */
-
 
 
 .about .about-content .left{
@@ -328,98 +268,12 @@ visibility: visible;
     background: none;
 }
 
-/* mprojects section styling */
-.mprojects, .teams{
-    color:#fff;
-    background: #111;
-}
-.mprojects .title::before,
-.teams .title::before{
-    background: #fff;
-}
-.mprojects .title::after,
-.teams .title::after{
-    background: #111;
-    content: "";            /* can type something here */
-}
-.mprojects .mproj-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.mprojects .mproj-content .card:hover{
-    background: rgb(3, 161, 252);
-}
-.mprojects .mproj-content .card .box{
-    transition: all 0.3s ease;
-}
-.mprojects .mproj-content .card:hover .box{
-    transform: scale(1.05);
-}
-.mprojects .mproj-content .card i{
-    font-size: 50px;
-    color: rgb(3, 161, 252);
-    transition: color 0.3s ease;
-}
-.mprojects .mproj-content .card:hover i{
-    color: #fff;
-}
-.mprojects .mproj-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+
+.hockey-poster img{
+    max-width: 100%;
+    padding-top: 40px;
 }
 
-
-/* sprojects section styling */
-.sprojects, .teams{
-    color:#fff;
-    background: #111;
-}
-.sprojects .title::before,
-.teams .title::before{
-    background: #fff;
-}
-.sprojects .title::after,
-.teams .title::after{
-    background: #111;
-    content: "";
-}
-.sprojects .sproj-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.sprojects .sproj-content .card:hover{
-    background: rgb(3, 161, 252);
-}
-.sprojects .sproj-content .card .box{
-    transition: all 0.3s ease;
-}
-.sprojects .sproj-content .card:hover .box{
-    transform: scale(1.05);
-}
-.sprojects .sproj-content .card i{
-    font-size: 50px;
-    color: rgb(3, 161, 252);
-    transition: color 0.3s ease;
-}
-.sprojects .sproj-content .card:hover i{
-    color: #fff;
-}
-.sprojects .sproj-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
 
 
 /* footer section styling */
@@ -506,19 +360,8 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .mprojects .mproj-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .sprojects .sproj-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
+
+
 }
 
 @media (max-width: 690px) {
