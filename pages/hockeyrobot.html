@@ -40,7 +40,7 @@
             <h2 class="title">Hockey Robot</h2>
             <div class="about-content">
                 <div class="column left">
-                    <div class="text">Short description<span class="typing-2"></span></div>
+                    <div class="text">Short description</div>
                     <p>This robot was my 3rd year project. It is a training assistant for hockey players, especially targeted for younger players. The player can move a hockey puck around and the robot will try to hit the puck away from them. This is done through poke and sweep checks, similarly to hockey games. A pneumatic actuator was used to extend the hockey stick and two DC motors were used to turn for tracking and sweep checks. The device can be operating manually or automatically. During manual operation, a PlayStation controller can be used to move all the actuators. For automatic operation, color-based tracking is used.</p>
                 </div>
                 
@@ -53,13 +53,16 @@
                 </div>
 
                 <div class="column left">
-                    <div class="text">My countributions<span class="typing-2"></span></div>
-                    <p>I designed the entire software component of this project, while my teammates designed the mechanical parts. We needed a way to track the puck at a high framerate, since the player would move the puck around very quickly. Since we were limited by our budget, we also needed cheap components. We already had some Arduinos available, and I have previously built multiple projects with them, so a simple Uno was used for the main controller. To implement color-based tracking, I experimented with OpenCV on my laptop, but it was too slow and complicated to use on the Arduino. Luckily, I found a very convenient solution with a PixyCam. This is a small piece of hardware that has a camera and does fast and efficient color-based object tracking. We only had to make sure to use a puck that is distinctively colored. It is well supported in being used with an Arduino, so it was the perfect tool for the tracking. The core of the control loop running on the device is a centering algorithm. The PixyCam sets a bounding box around the puck and returns its x,y coordinates to the Arduino. The two motors and a PID algorithm are used to keep the bounding box centered in the view of the camera. This centering will keep the robot’s hockey stick pointed directly at the puck, while it moves side to side. The distance from the puck can be related to the Y position of the bounding box. The further down in the frame it is, the closer the puck is to the robot. While centering the puck, the robot performs sweep and poke checks if the puck gets within striking distance. A lot of experimenting went into different hardcoded sweep algorithms. Interestingly, what worked best was not having an explicit sweep check at all. Instead, I tuned the PID controller in a way that heavily overshoots. This meant that whenever the puck came into striking distance while moving to the side, the robot would poke check while aggressively trying to center it. The result is a way more accurate and natural sweep check. The normal poke checks are performed when the puck is already centered. 
-I had to find some of the code I used for this project and since I was much less experienced at the time, it’s not the greatest, but it got the job done!
-</p>
+                    <h3 class="h3">Computer Vision</h3>
+                    <p>I designed the entire software component of this project, while my teammates designed the mechanical parts. We needed a way to track the puck at a high framerate, since the player would move the puck around very quickly. Since we were limited by our budget, we also needed cheap components. We already had some Arduinos available, and I have previously built multiple projects with them, so a simple Uno was used for the main controller. To implement color-based tracking, I experimented with OpenCV on my laptop, but it was too slow and complicated to use on the Arduino. Luckily, I found a very convenient solution with a PixyCam. This is a small piece of hardware that has a camera and does fast and efficient color-based object tracking. We only had to make sure to use a puck that is distinctively colored. It is well supported in being used with an Arduino, so it was the perfect tool for the tracking. The core of the control loop running on the device is a centering algorithm.</p>
+                </div>   
+
+                <div class="column right">
+                    <h3 class="h3">Control System</h3>
+                    <p>The PixyCam sets a bounding box around the puck and returns its x,y coordinates to the Arduino. The two motors and a PID algorithm are used to keep the bounding box centered in the view of the camera. This centering will keep the robot’s hockey stick pointed directly at the puck, while it moves side to side. The distance from the puck can be related to the Y position of the bounding box. The further down in the frame it is, the closer the puck is to the robot. While centering the puck, the robot performs sweep and poke checks if the puck gets within striking distance. A lot of experimenting went into different hardcoded sweep algorithms. Interestingly, what worked best was not having an explicit sweep check at all. Instead, I tuned the PID controller in a way that heavily overshoots. This meant that whenever the puck came into striking distance while moving to the side, the robot would poke check while aggressively trying to center it. The result is a way more accurate and natural sweep check. The normal poke checks are performed when the puck is already centered.</p>
                 </div>
 
-                <iframe width="520" height="315"
+                <iframe width="520" height="315" display:block
                     src="https://www.youtube.com/embed/0j5qIl5yVuE">
                 </iframe>
                 <!-- <div class="column right">
