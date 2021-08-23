@@ -391,35 +391,81 @@ visibility: visible;
 }
 .sprojects .sproj-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: rgb(34, 34, 34);
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all 0.3s ease;
 }
-.sprojects .sproj-content .card:hover{
+/* .sprojects .sproj-content .card:hover{
     background: rgb(3, 161, 252);
-}
+} */
 .sprojects .sproj-content .card .box{
     transition: all 0.3s ease;
 }
-.sprojects .sproj-content .card:hover .box{
+/* .sprojects .sproj-content .card:hover .box{
     transform: scale(1.05);
-}
+} */
 .sprojects .sproj-content .card i{
     font-size: 50px;
     color: rgb(3, 161, 252);
     transition: color 0.3s ease;
 }
-.sprojects .sproj-content .card:hover i{
+/* .sprojects .sproj-content .card:hover i{
     color: #fff;
+} */
+
+
+
+/* .skills-list a:hover{
+    background: rgb(3, 161, 252);
+}  */
+.skills-list a:hover{
+    transform: scale(1.1);
+    background: rgb(61, 61, 61);
+    border-radius: 10px;
 }
+/* ..skills-list a:hover{
+    color: #fff;
+} */
+
+
+
+
 .sprojects .sproj-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+.skills-list{
+    list-style-type: none;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+}
+
+.skills-left{
+    padding-top: 10px;
+    width: 100%; 
+    float: left; 
+}
+
+.skills-list a {
+    color: rgb(3, 161, 252);
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    position: relative;
+  }
+
+
 
 
 /* footer section styling */
