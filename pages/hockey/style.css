@@ -239,12 +239,19 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.contrib{
-    padding-bottom: 0px;
+
+
+
+i{
+    color: rgb(3, 161, 252);
+    padding-right: 10px;
+    font-size: 50px;    
+    transition: all 0.3s ease;
 }
 
-
-
+i:hover{
+    color: rgb(7, 114, 175);
+}
 
 
 .about .about-content .left{
