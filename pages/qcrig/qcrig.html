@@ -40,25 +40,27 @@
         <div class="max-width">
             <h2 class="title"><a href="https://github.com/Atlas200dk/sample-handposeRCcar">  
                 <i class="fab fa-github-square"></i>
-            </a>Hand gesture RC car</h2>
+            </a>Quality Control Rig</h2>
             <div class="about-content">
                 <div class="left">
                     <div class="text">Short description</div>
-                    <p>I made this project during my internship at Huawei. The goal was to create a cool open-source project showcasing the Atlas200DK in an embedded application. It also provides a sample project for connecting the board to other devices such as Arduino. The Atlas200DK is a small computer like a Raspberry Pi but equipped with a powerful AI accelerator chip. In this project, the chip is utilized to run a hand key point detection inference model, which was converted from a source TensorFlow model. This allows for real-time controlling of a wireless RC car.</p>
+                    <p>This project was my 4th year Engineering capstone project. The goal was to make a quality control rig for the Vancouver based shoe making company, Casca. The rig can take qualitative measurements of custom 3D printed insoles. These measurements include size, weight, heel compression and arch height. The QC process is completely automated and involves data retrieval and storage to the existing database. The process starts with the technician scanning the QR code on the insole using a camera on the rig, then placing the insole on the platform and pressing the start QC button on the touch screen user interface. All the measurements are then automatically taken.</p>
                 </div>
                 
                 <iframe width="520" height="315"
-                    src="https://www.youtube.com/embed/2f5Sg3r27cE">
+                    src="https://www.youtube.com/embed/grxLRxKg1Uw">
                 </iframe>
 
                 <div class="second-row">
                     <div class="left">
-                        <h3 class="h3">Computer Vision</h3>
+                        <img class="img1" src="../images/qcrig1_crop.png"></img>
+                        <h3 class="h3">System Architecture</h3>
                         <p>The CV pipeline starts with a camera connected to the Atlas200DK. The C++ application on the device takes frames from the camera and preprocesses them based on the inference model requirements. The preprocessed frame then gets processed by running on model using the AI core on the device. The output of the model is then postprocessed to provide pixel-numbered coordinates for each key point of the hand. There are many components here that go into making this pipeline as fast as possible (maximise framerate). Preprocessing, inference and post-processing can be all done in parallel, using different CPU cores. The preprocessing and inference can also be done utilizing the AI core and other hardware-based acceleration available on the device.</p>
                     </div>   
 
                     <div class="right">
-                        <h3 class="h3">Control System</h3>
+                        <img class="img2" src="../images/qcrig2_crop.png"></img>
+                        <h3 class="h3">Software Details</h3>
                         <p>The rest of the pipeline takes place after the pixel coordinates of the hand key points are available. There is a hardcoded algorithm to classify which command the hand is gesturing. This is done based on angles and distances between specific key points and fingers. Once the command is determined, a number coded byte is sent through Bluetooth to the RC car, which is controlled by an Arduino. This Arduino simply sets the motors to turn in accordance with the command. The command from the Atlas200DK can be sent through UART by directly connecting the Bluetooth module. An alternative is to connect a second Arduino through I2C and send the command to it first, which in turn sends it to the RC car Arduino through the Bluetooth module. When everything works together, the systems works in real-time, allowing precise control of the RC car.</p>
                     </div>
                 </div>

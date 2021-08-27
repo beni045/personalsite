@@ -302,7 +302,7 @@ footer span a:hover{
 
 
 .second-row{
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 
@@ -311,6 +311,12 @@ footer span a:hover{
     margin-left: 55%;
 }
 
+img{
+    width: 350px;
+    height: 300px; 
+    padding-bottom: 35px;
+    margin-left: 15%;
+}
 
 
 /* responsive media query start */
