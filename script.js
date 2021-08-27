@@ -76,11 +76,15 @@ $(document).ready(function(){
 
     });
 
-
     $('.hockey-project').click(function(){
         window.location='pages/hockey/hockeyrobot.html';
     });
+
     $('.gesturecare-project').click(function(){
         window.location='pages/rccar/rccar.html';
+    });
+
+    $('.qc-project').click(function(){
+        window.location='pages/qcrig/qcrig.html';
     });
 });
