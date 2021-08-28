@@ -38,7 +38,7 @@
     
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title"><a href="https://github.com/Atlas200dk/sample-handposeRCcar">  
+            <h2 class="title"><a href="https://github.com/beni045/QCrig">  
                 <i class="fab fa-github-square"></i>
             </a>Quality Control Rig</h2>
             <div class="about-content">
@@ -55,13 +55,13 @@
                     <div class="left">
                         <img class="img1" src="../images/qcrig1_crop.png"></img>
                         <h3 class="h3">System Architecture</h3>
-                        <p>The CV pipeline starts with a camera connected to the Atlas200DK. The C++ application on the device takes frames from the camera and preprocesses them based on the inference model requirements. The preprocessed frame then gets processed by running on model using the AI core on the device. The output of the model is then postprocessed to provide pixel-numbered coordinates for each key point of the hand. There are many components here that go into making this pipeline as fast as possible (maximise framerate). Preprocessing, inference and post-processing can be all done in parallel, using different CPU cores. The preprocessing and inference can also be done utilizing the AI core and other hardware-based acceleration available on the device.</p>
+                        <p>This project was aimed to be used in a real-world manufacturing process and therefore had different requirements from most university projects. There was much more focus on robustness, precision, documentation, etc. We also made sure to use parts that are readily available, so that building new devices to scale up was possible. The main controller is a Raspberry Pi 4B, which has a 7inch touchscreen attached. This allows for easy operation and monitoring through the custom GUI. In order to increase robustness with regards to sensor and actuator control, I decided to use an Arduino to interface between the sensors and actuators. This means that if there are any issues with any of the hardware components, the program will not be stuck in an infinite loop or crash.</p>
                     </div>   
 
                     <div class="right">
                         <img class="img2" src="../images/qcrig2_crop.png"></img>
                         <h3 class="h3">Software Details</h3>
-                        <p>The rest of the pipeline takes place after the pixel coordinates of the hand key points are available. There is a hardcoded algorithm to classify which command the hand is gesturing. This is done based on angles and distances between specific key points and fingers. Once the command is determined, a number coded byte is sent through Bluetooth to the RC car, which is controlled by an Arduino. This Arduino simply sets the motors to turn in accordance with the command. The command from the Atlas200DK can be sent through UART by directly connecting the Bluetooth module. An alternative is to connect a second Arduino through I2C and send the command to it first, which in turn sends it to the RC car Arduino through the Bluetooth module. When everything works together, the systems works in real-time, allowing precise control of the RC car.</p>
+                        <p>The program running on the Pi is all written in Python, including the GUI where I used PyQt5. There are multiple functionalities implemented with the camera like QC code reading, size and side evaluation. The size and side are determined using the color contrast of the insole and the bed of the rig. I experimented with many times to make sure it is robust to lighting conditions. There is also communication with the database to retrieve insole data, such as the 3D model (STL). This is processed with numpy-stl to get the size and the arch height. After taking all the measurements from the camera, the Pi sends commands to the Arduino through UART to do all of the sensor and actuator based measurements. The Arduino simply returns the result measurement of the requested parameter.</p>
                     </div>
                 </div>
 
