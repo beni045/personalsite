@@ -374,6 +374,9 @@ visibility: visible;
     margin: 10px 0 7px 0;
 }
 
+.mprojects .mproj-content .card{
+    color: white;
+}
 
 /* sprojects section styling */
 .sprojects, .teams{
