@@ -312,7 +312,6 @@ footer span a:hover{
 }
 
 
-
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -327,6 +326,9 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
+    .about .title::after {
+        content: "";
+    }
     .menu-btn{
         display: block;
         z-index: 999;
@@ -372,17 +374,68 @@ footer span a:hover{
     .about .about-content .column{
         width: 100%;
     }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-        flex: 100%;
+
+/* 
+    .about .about-content .right{
+        text-align: center;
+        padding-top: 20px;
     }
+
     .about .about-content .right{
         flex: 100%;
+    } */
+
+
+    .about .about-content .left{
+        width: 100%;
+    }
+
+    .about .about-content .left .text{
+        text-align: center;
+    }
+
+    iframe{
+        width: 100%;
+        padding: 20px 10px;
+        border: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img{
+        /* width: 90%;
+        height: auto;
+        border: none; */
+        padding: 20px 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about .about-content .second-row{
+        padding-top: 0px;
+    }
+
+    .about .about-content .second-row .left{
+        width: 95%; 
+        text-align: justify;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    .about .about-content .second-row .right{
+        width: 95%;
+        margin-left: 0px;
+        text-align: justify;
     }
 
 
+    h3{
+        text-align: center;
+    }
+
+    
 }
 
 @media (max-width: 690px) {
@@ -398,13 +451,10 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .mprojects .mproj-content .card{
-        width: 100%;
-    }
-    .sprojects .sproj-content .card{
-        width: 100%;
-    }
 }
+
+
+
 
 @media (max-width: 500px) {
     .home .home-content .text-2{

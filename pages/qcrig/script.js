@@ -47,4 +47,18 @@ $(document).ready(function(){
         }, 500);
 
     });
+
+
+
+    // // Selecting the iframe element
+    var iframe = document.getElementById("myIframe");
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
 });
+
+
+var iframe = document.getElementById("myIframe");
+    
+// Adjusting the iframe height onload event
+iframe.onload = function(){
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+}
