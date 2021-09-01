@@ -333,6 +333,9 @@ img{
     }
 }
 @media (max-width: 947px){
+    .about .title::after {
+        content: "";
+    }
     .menu-btn{
         display: block;
         z-index: 999;
@@ -378,17 +381,35 @@ img{
     .about .about-content .column{
         width: 100%;
     }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-        flex: 100%;
+
+    .about .about-content .right .downloadcv-btn{
+        max-width: 100%;
+        text-align: center;
+        padding: 5% 10%;
     }
+
+ 
+
+    .about .about-content .right{
+        text-align: center;
+    }
+
     .about .about-content .right{
         flex: 100%;
     }
-
-
+    .mprojects .mproj-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .sprojects .sproj-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -411,6 +432,30 @@ img{
         width: 100%;
     }
 }
+
+
+
+/* 
+@media (max-width: 667px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .mprojects .mproj-content .card{
+        width: 100%;
+    }
+    .sprojects .sproj-content .card{
+        width: 100%;
+    }
+} */
 
 @media (max-width: 500px) {
     .home .home-content .text-2{

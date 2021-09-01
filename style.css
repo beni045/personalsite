@@ -549,12 +549,7 @@ footer span a:hover{
     .about .about-content .column{
         width: 100%;
     }
-    /* .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-        flex: 100%;
-    } */
+
     .about .about-content .right .downloadcv-btn{
         max-width: 100%;
         text-align: center;
@@ -563,6 +558,10 @@ footer span a:hover{
 
     .about .about-content .right{
         text-align: center;
+    }
+
+    .tooltip .tooltiptext{
+        font-size: 15px;
     }
 
     .about .about-content .right{
@@ -605,28 +604,6 @@ footer span a:hover{
 }
 
 
-
-/* 
-@media (max-width: 667px) {
-    .max-width{
-        padding: 0 23px;
-    }
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
-    }
-    .mprojects .mproj-content .card{
-        width: 100%;
-    }
-    .sprojects .sproj-content .card{
-        width: 100%;
-    }
-} */
 
 @media (max-width: 500px) {
     .home .home-content .text-2{
