@@ -382,12 +382,6 @@ img{
         width: 100%;
     }
 
-    .about .about-content .right .downloadcv-btn{
-        max-width: 100%;
-        text-align: center;
-        padding: 5% 10%;
-    }
-
  
 
     .about .about-content .right{
@@ -397,19 +391,7 @@ img{
     .about .about-content .right{
         flex: 100%;
     }
-    .mprojects .mproj-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .sprojects .sproj-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
+
 }
 
 @media (max-width: 690px) {
@@ -425,37 +407,10 @@ img{
     .home .home-content a{
         font-size: 20px;
     }
-    .mprojects .mproj-content .card{
-        width: 100%;
-    }
-    .sprojects .sproj-content .card{
-        width: 100%;
-    }
 }
 
 
 
-/* 
-@media (max-width: 667px) {
-    .max-width{
-        padding: 0 23px;
-    }
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
-    }
-    .mprojects .mproj-content .card{
-        width: 100%;
-    }
-    .sprojects .sproj-content .card{
-        width: 100%;
-    }
-} */
 
 @media (max-width: 500px) {
     .home .home-content .text-2{

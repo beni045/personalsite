@@ -2,6 +2,12 @@ $(document).ready(function(){
     $('.navbar').addClass("sticky");
 
     $(window).scroll(function(){
+        // show navbar on scroll
+        // if(this.scrollY > 20){
+        //     $('.navbar').addClass("sticky");
+        // }else{
+        //     $('.navbar').removeClass("sticky");
+        // }
         // scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
