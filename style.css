@@ -256,7 +256,7 @@ section .title::after{
 .about .about-content .right .downloadcv-btn{
     display: inline-block;
     background: #222;
-    color: #405f9e;
+    color: rgb(193, 193, 193);
     font-size: 35px;
     font-weight: 500;
     padding: 10px 110px;
