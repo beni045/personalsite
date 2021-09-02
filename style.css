@@ -64,7 +64,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: white;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -72,7 +72,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -88,8 +88,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
-    background: rgb(3, 161, 252);
+    padding: 5px 0;
+    background: #222;
 }
 .navbar .max-width{
     display: flex;
@@ -102,7 +102,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -121,7 +121,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -138,7 +138,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(3, 161, 252);
+    background: #405f9e;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -166,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/robot.jpg") no-repeat center;
+    background: url("images/space2.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -194,30 +194,40 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: rgb(3, 161, 252);
+    background: #405f9e;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid rgb(3, 161, 252);
+    border: 2px solid #405f9e;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     background: none;
 }
 
 
 /* about section styling */
+
+.about{
+    /* background-color: #111; */
+    background: url("images/space2.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+}
+
 .about .title::after{
-    content: "interests, contacts";
+    content: "";
 }
 
 .about .about-content .right{
@@ -229,7 +239,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -237,14 +247,13 @@ section .title::after{
 
 .about .about-content .right .downloadcv-btn{
     display: inline-block;
-    background: rgb(3, 161, 252);
-    color: #fff;
+    background: #222;
+    color: #405f9e;
     font-size: 35px;
     font-weight: 500;
     padding: 10px 110px;
     margin-top: 10px;
     border-radius: 6px;
-    border: 2px solid rgb(3, 161, 252);
     transition: all 0.3s ease;
 }
 
@@ -252,15 +261,14 @@ section .title::after{
 .about .about-content .right .contact-btns a,
     .email-btn{
     display: inline-block;
-    background: rgb(3, 161, 252);
-    color: #fff;
+    background: #222;
+    color: #405f9e;
     font-size: 57px;
     font-weight: 500;
     padding: 1px 45px;
     margin-top: 10px;
     margin-right: 10px;
     border-radius: 6px;
-    border: 2px solid rgb(3, 161, 252);
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -284,14 +292,34 @@ right: 100px;
 visibility: visible;
 }
 
+.about .about-content .right .box{
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover .box,
+    .email-btn:hover .box{
+    color: white;
+    transform: scale(1.05);
+}
+
+.about .about-content .right .downloadcv-btn:hover .box{
+    color: white;
+    transform: scale(1.05);
+}
+
+
+
 .about .about-content .right a:hover,
     .email-btn:hover{
-    color: rgb(3, 161, 252);
-    background: none;
+    background-color: #405f9e;
+}
+
+.about .about-content .right .downloadcv-btn:hover{
+    background-color: #405f9e;
 }
 
 /* .email-btn:active #email-clipboard{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     
 } */
 
@@ -306,29 +334,32 @@ visibility: visible;
     margin-bottom: 10px;
 }
 .about .about-content .left .text span{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
 }
 .about .about-content .left p{
     text-align: justify;
 }
 .about .about-content .left a{
     display: inline-block;
-    background: rgb(3, 161, 252);
+    background: #405f9e;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(3, 161, 252);
+    border: 2px solid #405f9e;
     transition: all 0.3s ease;
 }
 .about .about-content .left a:hover{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     background: none;
 }
 
 /* mprojects section styling */
+
+
+
 .mprojects, .teams{
     color:#fff;
     background: #111;
@@ -352,7 +383,7 @@ visibility: visible;
     transition: all 0.3s ease;
 }
 .mprojects .mproj-content .card:hover{
-    background: rgb(3, 161, 252);
+    background: #405f9e;
 }
 .mprojects .mproj-content .card .box{
     transition: all 0.3s ease;
@@ -362,7 +393,7 @@ visibility: visible;
 }
 .mprojects .mproj-content .card i{
     font-size: 50px;
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     transition: color 0.3s ease;
 }
 .mprojects .mproj-content .card:hover i{
@@ -376,6 +407,14 @@ visibility: visible;
 
 .mprojects .mproj-content .card{
     color: white;
+}
+
+.mprojects{
+    /* background-color: #111; */
+    background: url("images/space2.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
 }
 
 /* sprojects section styling */
@@ -394,7 +433,7 @@ visibility: visible;
 }
 .sprojects .sproj-content .card{
     width: calc(33% - 20px);
-    background: rgb(34, 34, 34);
+    background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -402,7 +441,7 @@ visibility: visible;
     transition: all 0.3s ease;
 }
 /* .sprojects .sproj-content .card:hover{
-    background: rgb(3, 161, 252);
+    background: #405f9e;
 } */
 .sprojects .sproj-content .card .box{
     transition: all 0.3s ease;
@@ -412,7 +451,7 @@ visibility: visible;
 } */
 .sprojects .sproj-content .card i{
     font-size: 50px;
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     transition: color 0.3s ease;
 }
 /* .sprojects .sproj-content .card:hover i{
@@ -422,7 +461,7 @@ visibility: visible;
 
 
 /* .skills-list a:hover{
-    background: rgb(3, 161, 252);
+    background: #405f9e;
 }  */
 .skills-list a:hover{
     transform: scale(1.1);
@@ -460,7 +499,7 @@ visibility: visible;
 }
 
 .skills-list a {
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     display: block;
     font-size: 1.5rem;
     padding: 0.25rem 0.8rem;
@@ -469,7 +508,13 @@ visibility: visible;
   }
 
 
-
+.sprojects{
+    /* background-color: #111; */
+    background: url("images/space2.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+}
 
 /* footer section styling */
 footer{
@@ -479,7 +524,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     text-decoration: none;
 }
 footer span a:hover{
