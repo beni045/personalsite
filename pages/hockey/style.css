@@ -29,7 +29,12 @@ html{
 /* all similar content styling codes */
 section{
     padding: 100px 0;
+    color: rgb(193, 193, 193);
+    background: url("../../images/space.jpg") no-repeat center;
+    background-size: cover;
 }
+
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -69,7 +74,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: rgb(193, 193, 193);
     transform: translateX(-50%);
 }
 section .title::after{
@@ -77,9 +82,9 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     padding: 0 5px;
-    background: #fff;
+    background: rgb(193, 193, 193);
     transform: translateX(-50%);
 }
 
@@ -93,8 +98,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
-    background: rgb(3, 161, 252);
+    padding: 5px 0;
+    background: #222;
 }
 .navbar .max-width{
     display: flex;
@@ -102,16 +107,24 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
-    font-size: 35px;
+    color: rgb(193, 193, 193);
     font-weight: 600;
+    font-size: 35px;
+    background-image: -webkit-linear-gradient(left, #E0F8F7, #585858, #fff); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, #E0F8F7, #585858, #fff); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, #E0F8F7, #585858, #fff); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, #E0F8F7, #585858, #fff); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, #E0F8F7, #585858, #fff); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 .navbar .logo a span{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: rgb(193, 193, 193);
 }
 .navbar .menu li{
     list-style: none;
@@ -119,22 +132,22 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color: rgb(193, 193, 193);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: rgb(193, 193, 193);
 }
 
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: rgb(193, 193, 193);
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -143,12 +156,12 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(3, 161, 252);
+    background: #405f9e;
     right: 30px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+    color: rgb(193, 193, 193);
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -173,7 +186,7 @@ section .title::after{
     display: flex;
     background: url("images/robot.jpg") no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: rgb(193, 193, 193);
     min-height: 500px;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -199,23 +212,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: rgb(3, 161, 252);
-    color: #fff;
+    background: #405f9e;
+    color: rgb(193, 193, 193);
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid rgb(3, 161, 252);
+    border: 2px solid #405f9e;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     background: none;
 }
 
@@ -234,7 +247,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -243,14 +256,14 @@ section .title::after{
 
 
 .fa-github-square{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     padding-right: 10px;
     font-size: 50px;    
     transition: all 0.3s ease;
 }
 
 .fa-github-square:hover{
-    color: rgb(7, 114, 175);
+    color: rgb(193, 193, 193);
 }
 
 
@@ -263,25 +276,25 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .left .text span{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
 }
 .about .about-content .left p{
     text-align: justify;
 }
 .about .about-content .left a{
     display: inline-block;
-    background: rgb(3, 161, 252);
-    color: #fff;
+    background: #405f9e;
+    color: rgb(193, 193, 193);
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(3, 161, 252);
+    border: 2px solid #405f9e;
     transition: all 0.3s ease;
 }
 .about .about-content .left a:hover{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     background: none;
 }
 
@@ -298,11 +311,11 @@ section .title::after{
 footer{
     background: #111;
     padding: 15px 23px;
-    color: #fff;
+    color: rgb(193, 193, 193);
     text-align: center;
 }
 footer span a{
-    color: rgb(3, 161, 252);
+    color: #405f9e;
     text-decoration: none;
 }
 footer span a:hover{
