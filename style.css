@@ -220,9 +220,9 @@ section .title::after{
 .about{
     /* background-color: #111; */
     background: url("images/space2.jpg") no-repeat center;
-    height: 100vh;
+    /* height: 100vh; */
     color: #fff;
-    min-height: 500px;
+    /* min-height: 500px; */
     background-size: cover;
 }
 
@@ -412,8 +412,8 @@ visibility: visible;
 .mprojects{
     /* background-color: #111; */
     background: url("images/space2.jpg") no-repeat center;
-    height: 100vh;
-    min-height: 500px;
+    /* height: 100vh;
+    min-height: 500px; */
     background-size: cover;
 }
 
@@ -511,8 +511,8 @@ visibility: visible;
 .sprojects{
     /* background-color: #111; */
     background: url("images/space2.jpg") no-repeat center;
-    height: 100vh;
-    min-height: 500px;
+    /* height: 100vh;
+    min-height: 500px; */
     background-size: cover;
 }
 
