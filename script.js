@@ -69,7 +69,7 @@ $(document).ready(function(){
         navigator.clipboard.writeText(copyText);
         var obj = document.getElementById("email-clipboard");
         var orig = obj.style.color;
-        obj.style.color = 'rgb(3, 161, 252)';
+        obj.style.color = '#405f9e';
         setTimeout(function(){
              obj.style.color = orig;
         }, 500);
